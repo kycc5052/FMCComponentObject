@@ -1,0 +1,145 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent"
+              android:background="@drawable/tab_page_bkg"
+              android:orientation="vertical"
+    >
+    <!-- 中间 内容区 顶部 导航栏 布局-->
+    <LinearLayout
+        android:id="@+id/middle_content_area_ll_navigation_layout"
+        android:layout_width="match_parent"
+        android:layout_height="35dp"
+        android:background="@drawable/fmc_middle_content_area_navigation_bkg"
+        android:orientation="horizontal"
+        >
+        <!-- 导航栏 推荐 布局-->
+        <RelativeLayout
+            android:id="@+id/middle_content_area_rl_navigation_recommended_layout"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="1dp"
+            android:layout_weight="1"
+            >
+            <!-- 推荐 文本-->
+            <TextView
+                android:id="@+id/navigation_recommended_tv_text"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:gravity="center"
+                android:text="推荐"
+                android:textColor="@color/middle_content_area_tv_text_color_selector"
+                android:textSize="18sp"
+                />
+            <!-- 推荐 image-->
+            <View
+                android:id="@+id/navigation_recommended_view_line"
+                android:layout_width="wrap_content"
+                android:layout_height="2dp"
+                android:layout_below="@id/navigation_recommended_tv_text"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:background="@drawable/fmc_career_book_progressbar_full"
+                >
+
+            </View>
+        </RelativeLayout>
+        <!-- 导航栏 视频 布局-->
+        <RelativeLayout
+            android:id="@+id/middle_content_area_rl_navigation_video_layout"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="1dp"
+            android:layout_weight="1"
+            >
+            <!-- 视频 文本-->
+            <TextView
+                android:id="@+id/navigation_video_tv_text"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:gravity="center"
+                android:text="视频"
+                android:textColor="@color/middle_content_area_tv_text_color_selector"
+                android:textSize="18sp"
+                />
+            <!-- 视频 image-->
+            <View
+                android:id="@+id/navigation_video_view_line"
+                android:layout_width="wrap_content"
+                android:layout_height="2dp"
+                android:layout_below="@id/navigation_video_tv_text"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:background="@drawable/fmc_career_book_progressbar_full"
+                >
+
+            </View>
+        </RelativeLayout>
+        <!-- 导航栏 组件 布局-->
+        <RelativeLayout
+            android:id="@+id/middle_content_area_rl_navigation_component_layout"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="1dp"
+            android:layout_weight="1"
+            >
+            <!-- 组件 文本-->
+            <TextView
+                android:id="@+id/navigation_component_tv_text"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:gravity="center"
+                android:text="组件"
+                android:textColor="@color/middle_content_area_tv_text_color_selector"
+                android:textSize="18sp"
+                />
+            <!-- 组件 image-->
+            <View
+                android:id="@+id/navigation_component_view_line"
+                android:layout_width="wrap_content"
+                android:layout_height="2dp"
+                android:layout_below="@id/navigation_component_tv_text"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:background="@drawable/fmc_career_book_progressbar_full"
+                >
+
+            </View>
+        </RelativeLayout>
+        <!-- 导航栏 娱乐 布局-->
+        <RelativeLayout
+            android:id="@+id/middle_content_area_rl_navigation_entertainment_layout"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="1dp"
+            android:layout_weight="1"
+            >
+            <!-- 娱乐 文本-->
+            <TextView
+                android:id="@+id/navigation_entertainment_tv_text"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:gravity="center"
+                android:text="娱乐"
+                android:textColor="@color/middle_content_area_tv_text_color_selector"
+                android:textSize="18sp"
+                />
+            <!-- 娱乐 image-->
+            <View
+                android:id="@+id/navigation_entertainment_view_line"
+                android:layout_width="wrap_content"
+                android:layout_height="2dp"
+                android:layout_below="@id/navigation_entertainment_tv_text"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:background="@drawable/fmc_career_book_progressbar_full"
+                >
+
+            </View>
+        </RelativeLayout>
+    </LinearLayout>
+</LinearLayout>

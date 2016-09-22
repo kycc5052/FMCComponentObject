@@ -1,0 +1,140 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:orientation="vertical"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent">
+
+    <!--顶部 标识栏-->
+    <LinearLayout
+        android:id="@+id/content_frame_ll_top_logo_bar"
+        android:layout_width="match_parent"
+        android:layout_height="100dp"
+        android:background="@drawable/fmc_top_logo_bar_bkg"
+        android:orientation="vertical"
+        >
+        <!-- 顶部 标识栏 嵌套布局-->
+        <RelativeLayout
+            android:id="@+id/top_logo_bar_rl_nested_layout"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+            <!-- 顶部 标识栏 边界，图片,未读消息，布局-->
+            <RelativeLayout
+                android:id="@+id/top_logo_bar_rl_image_unread_count_layout"
+                android:layout_width="60dp"
+                android:layout_height="60dp"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="5dp"
+                >
+                <!-- 顶部 标识栏 边界，图片-->
+                <ImageView
+                    android:id="@+id/top_logo_bar_iv_border_image"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:background="@drawable/person_center_component_border"
+                    android:padding="2dp"
+                    />
+                <!-- 顶部 标识栏 边界，未读消息数-->
+                <ImageView
+                    android:id="@+id/top_logo_bar_iv_border_image_unread_count"
+                    android:layout_width="10dp"
+                    android:layout_height="10dp"
+                    android:layout_alignParentRight="true"
+                    android:layout_marginRight="6dp"
+                    android:layout_marginTop="3dp"
+                    android:background="@drawable/unread_count_round_bg"
+                    />
+
+            </RelativeLayout>
+            <!-- 顶部 标识栏 组件Name，布局-->
+            <RelativeLayout
+                android:id="@+id/top_logo_bar_rl_name_layout"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:layout_centerVertical="true"
+                >
+                <!--组件Name-->
+                <TextView
+                    android:id="@+id/top_logo_bar_tv_component_name_text"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Activity (活动)"
+                    android:textSize="20sp"
+                    />
+                <!--选择图片-->
+                <ImageView
+                    android:id="@+id/top_logo_bar_iv_component_select_image"
+                    android:layout_width="22dp"
+                    android:layout_height="22dp"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="5dp"
+                    android:layout_toRightOf="@+id/top_logo_bar_tv_component_name_text"
+                    android:background="@drawable/arrow_down_round"
+                    />
+            </RelativeLayout>
+            <!-- 顶部 标识栏 消息，图片，布局-->
+            <RelativeLayout
+                android:id="@+id/top_logo_bar_rl_message_layout"
+                android:layout_width="60dp"
+                android:layout_height="60dp"
+                android:layout_alignParentRight="true"
+                >
+                <!--消息 图片-->
+                <ImageView
+                    android:id="@+id/top_logo_bar_iv_message_image"
+                    android:layout_width="35dp"
+                    android:layout_height="30dp"
+                    android:layout_centerInParent="true"
+                    android:background="@drawable/message_center_normal"
+                    />
+                <!--消息 数-->
+                <TextView
+                    android:id="@+id/top_logo_bar_tv_message_count"
+                    android:layout_width="20dp"
+                    android:layout_height="20dp"
+                    android:layout_alignParentRight="true"
+                    android:layout_marginRight="5dp"
+                    android:layout_marginTop="5dp"
+                    android:background="@drawable/seek_btn_orange"
+                    android:gravity="center"
+                    android:text="10"
+                    android:textColor="#FFFFFF"
+                    android:textSize="10sp"
+                    />
+            </RelativeLayout>
+            <!-- 顶部 标识栏 用户星级，布局-->
+            <RelativeLayout
+                android:id="@+id/top_logo_bar_rl_rating_bar_layout"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentBottom="true"
+                android:layout_alignParentRight="true"
+                android:layout_marginBottom="6dp"
+                android:layout_marginRight="5dp"
+                >
+                <!-- 热度星级，文本-->
+                <TextView
+                    android:id="@+id/top_logo_bar_tv_rating_bar_text"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:text="热度:"
+                    android:textColor="#C0FF3E"
+                    />
+                <!-- 热度星级，星星-->
+                <RatingBar
+                    style="@android:style/Widget.Holo.RatingBar.Small"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_toRightOf="@+id/top_logo_bar_tv_rating_bar_text"
+                    android:numStars="5"
+                    android:rating="3.0"
+                    />
+            </RelativeLayout>
+
+        </RelativeLayout>
+
+    </LinearLayout>
+
+</LinearLayout>
