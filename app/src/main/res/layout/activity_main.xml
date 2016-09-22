@@ -6,4 +6,6 @@
     android:layout_height="match_parent"
     tools:context="myas.xika.com.fmccomponentobject.MainActivity"
     >
+    <!--已经准备就绪 -->
+
 </FrameLayout>
